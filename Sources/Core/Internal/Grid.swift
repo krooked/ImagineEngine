@@ -348,13 +348,20 @@ internal final class Grid: Activatable {
                 continue
             }
 
-            guard actor.rectForCollisionDetection.intersects(otherActor.rectForCollisionDetection) else {
+            guard actorIntersection(between: actor, and: otherActor) else {
                 continue
             }
 
             handleCollision(between: actor, and: otherActor)
             handleCollision(between: otherActor, and: actor)
         }
+    }
+
+    private func actorIntersection(between actorA: Actor, and actorB: Actor) -> Bool {
+        if actorA.isAdvancedCollisionDetectionEnabled && actorB.isAdvancedCollisionDetectionEnabled {
+            return intersection(between: actorA, and: actorB)
+        }
+        return actorA.rectForCollisionDetection.intersects(actorB.rectForCollisionDetection)
     }
 
     private func detectCollision(between actor: Actor,

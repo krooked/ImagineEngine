@@ -10,6 +10,8 @@
 		026CE1C41FC06B7E00A0998B /* CameraEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */; };
 		026CE1C51FC06B7E00A0998B /* CameraEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */; };
 		026CE1C61FC06B7E00A0998B /* CameraEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */; };
+		42E9D756269E8BA2A0C9C5C8 /* SeparatingAxisTheoremUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9D1E63A00F44EAD6E4676 /* SeparatingAxisTheoremUtil.swift */; };
+		42E9D7CCE0023C7CC772F358 /* Point+DotProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */; };
 		5204849D1FA353590011D372 /* ClickGestureRecognizerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849C1FA353590011D372 /* ClickGestureRecognizerMock.swift */; };
 		5204849E1FA353590011D372 /* ClickGestureRecognizerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849C1FA353590011D372 /* ClickGestureRecognizerMock.swift */; };
 		520484A21FA357070011D372 /* ClickGestureRecognizer-macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849F1FA356F80011D372 /* ClickGestureRecognizer-macOS.swift */; };
@@ -359,6 +361,8 @@
 
 /* Begin PBXFileReference section */
 		026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraEventCollection.swift; sourceTree = "<group>"; };
+		42E9D1E63A00F44EAD6E4676 /* SeparatingAxisTheoremUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatingAxisTheoremUtil.swift; sourceTree = "<group>"; };
+		42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+DotProduct.swift"; sourceTree = "<group>"; };
 		5204849C1FA353590011D372 /* ClickGestureRecognizerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickGestureRecognizerMock.swift; sourceTree = "<group>"; };
 		5204849F1FA356F80011D372 /* ClickGestureRecognizer-macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClickGestureRecognizer-macOS.swift"; sourceTree = "<group>"; };
 		5209C844208BE4A90033DB4A /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
@@ -632,6 +636,8 @@
 				522CD6631F8D4512008DB43D /* UpdateOutcome.swift */,
 				522CD6641F8D4512008DB43D /* View+MakeLayer.swift */,
 				CDC7F0031FC419F300782197 /* TextureErrorHandler.swift */,
+				42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */,
+				42E9D1E63A00F44EAD6E4676 /* SeparatingAxisTheoremUtil.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -1293,6 +1299,8 @@
 				522CD69E1F8D4521008DB43D /* ReplicatorLayer.swift in Sources */,
 				C800CE2D1FA77F74008EE08D /* BundleProtocol.swift in Sources */,
 				522CD6851F8D451D008DB43D /* RepeatMode.swift in Sources */,
+				42E9D7CCE0023C7CC772F358 /* Point+DotProduct.swift in Sources */,
+				42E9D756269E8BA2A0C9C5C8 /* SeparatingAxisTheoremUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

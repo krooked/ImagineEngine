@@ -64,6 +64,8 @@ public final class Actor: Node<CALayer>, InstanceHashable, ActionPerformer,
     public var hitboxSize: Size?
     /// Whether the actor is able to participate in collisions.
     public var isCollisionDetectionEnabled = true
+    // Advanced collision detection is taking rotation into account
+    public var isAdvancedCollisionDetectionEnabled = false
     /// Whether the actor responds to hit testing.
     public var isHitTestingEnabled = true { didSet { hitTestingStatusDidChange(from: oldValue) } }
     /// Any constraints that are applied to the actor, to restrict how and where it can move.
@@ -75,6 +77,10 @@ public final class Actor: Node<CALayer>, InstanceHashable, ActionPerformer,
     internal lazy var blocksInContact = Set<Block>()
     internal var isWithinScene = false
     internal var isCollisionDetectionActive = false
+    /// The vertices used for collision detection
+    internal var vertices: [CGPoint]?
+    /// The normal vectors used for collision detection
+    internal var normals: [CGPoint]?
 
     private let pluginManager = PluginManager()
     private lazy var actionManager = ActionManager(object: self)
@@ -84,7 +90,7 @@ public final class Actor: Node<CALayer>, InstanceHashable, ActionPerformer,
 
     // MARK: - Initializer
 
-    /// Initialize an instance of this class
+/// Initialize an instance of this class
     public init() {
         super.init(layer: Layer())
     }
