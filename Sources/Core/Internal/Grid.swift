@@ -148,7 +148,9 @@ internal final class Grid: Activatable {
         let expandedRect = actor.rectForCollisionDetection.insetBy(dx: -1, dy: -1)
 
         for otherActor in actor.actorsInContact {
-            if !expandedRect.intersects(otherActor.rectForCollisionDetection) {
+            // TODO 
+            if !CollisionDetector.intersection(between: actor, and: otherActor, actorAInset: (dx: -1, dy: -1)) {
+//            if !expandedRect.intersects(otherActor.rectForCollisionDetection) {
                 actor.actorsInContact.remove(otherActor)
                 otherActor.actorsInContact.remove(actor)
             }
@@ -348,20 +350,13 @@ internal final class Grid: Activatable {
                 continue
             }
 
-            guard actorIntersection(between: actor, and: otherActor) else {
+            guard CollisionDetector.intersection(between: actor, and: otherActor) else {
                 continue
             }
 
             handleCollision(between: actor, and: otherActor)
             handleCollision(between: otherActor, and: actor)
         }
-    }
-
-    private func actorIntersection(between actorA: Actor, and actorB: Actor) -> Bool {
-        if actorA.isAdvancedCollisionDetectionEnabled && actorB.isAdvancedCollisionDetectionEnabled {
-            return intersection(between: actorA, and: actorB)
-        }
-        return actorA.rectForCollisionDetection.intersects(actorB.rectForCollisionDetection)
     }
 
     private func detectCollision(between actor: Actor,
@@ -448,6 +443,7 @@ private extension Grid {
         case full
         case constraintsOnly
     }
+
 }
 
 extension Grid.Index {

@@ -10,8 +10,21 @@
 		026CE1C41FC06B7E00A0998B /* CameraEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */; };
 		026CE1C51FC06B7E00A0998B /* CameraEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */; };
 		026CE1C61FC06B7E00A0998B /* CameraEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */; };
-		42E9D756269E8BA2A0C9C5C8 /* SeparatingAxisTheoremUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9D1E63A00F44EAD6E4676 /* SeparatingAxisTheoremUtil.swift */; };
+		42E9D756269E8BA2A0C9C5C8 /* CollisionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9D1E63A00F44EAD6E4676 /* CollisionDetector.swift */; };
 		42E9D7CCE0023C7CC772F358 /* Point+DotProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */; };
+		4E02F42B23293F3D00BE8008 /* Point+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F42923293F3D00BE8008 /* Point+Rotate.swift */; };
+		4E02F42C23293F3D00BE8008 /* Point+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F42923293F3D00BE8008 /* Point+Rotate.swift */; };
+		4E02F42D23293F3D00BE8008 /* Point+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F42923293F3D00BE8008 /* Point+Rotate.swift */; };
+		4E02F42E23293F3D00BE8008 /* Point+Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F42A23293F3D00BE8008 /* Point+Normal.swift */; };
+		4E02F42F23293F3D00BE8008 /* Point+Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F42A23293F3D00BE8008 /* Point+Normal.swift */; };
+		4E02F43023293F3D00BE8008 /* Point+Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F42A23293F3D00BE8008 /* Point+Normal.swift */; };
+		4E4609372329262E000D804F /* Point+DotProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */; };
+		4E4609382329262F000D804F /* Point+DotProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */; };
+		4E46093923292633000D804F /* CollisionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9D1E63A00F44EAD6E4676 /* CollisionDetector.swift */; };
+		4E46093A23292633000D804F /* CollisionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9D1E63A00F44EAD6E4676 /* CollisionDetector.swift */; };
+		4EC9E086233BA9E200DE4AFF /* Point+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC9E085233BA9E200DE4AFF /* Point+Addition.swift */; };
+		4EC9E087233BA9E200DE4AFF /* Point+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC9E085233BA9E200DE4AFF /* Point+Addition.swift */; };
+		4EC9E088233BA9E200DE4AFF /* Point+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC9E085233BA9E200DE4AFF /* Point+Addition.swift */; };
 		5204849D1FA353590011D372 /* ClickGestureRecognizerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849C1FA353590011D372 /* ClickGestureRecognizerMock.swift */; };
 		5204849E1FA353590011D372 /* ClickGestureRecognizerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849C1FA353590011D372 /* ClickGestureRecognizerMock.swift */; };
 		520484A21FA357070011D372 /* ClickGestureRecognizer-macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849F1FA356F80011D372 /* ClickGestureRecognizer-macOS.swift */; };
@@ -361,8 +374,11 @@
 
 /* Begin PBXFileReference section */
 		026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraEventCollection.swift; sourceTree = "<group>"; };
-		42E9D1E63A00F44EAD6E4676 /* SeparatingAxisTheoremUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatingAxisTheoremUtil.swift; sourceTree = "<group>"; };
+		42E9D1E63A00F44EAD6E4676 /* CollisionDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionDetector.swift; sourceTree = "<group>"; };
 		42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+DotProduct.swift"; sourceTree = "<group>"; };
+		4E02F42923293F3D00BE8008 /* Point+Rotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+Rotate.swift"; sourceTree = "<group>"; };
+		4E02F42A23293F3D00BE8008 /* Point+Normal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+Normal.swift"; sourceTree = "<group>"; };
+		4EC9E085233BA9E200DE4AFF /* Point+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+Addition.swift"; sourceTree = "<group>"; };
 		5204849C1FA353590011D372 /* ClickGestureRecognizerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickGestureRecognizerMock.swift; sourceTree = "<group>"; };
 		5204849F1FA356F80011D372 /* ClickGestureRecognizer-macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClickGestureRecognizer-macOS.swift"; sourceTree = "<group>"; };
 		5209C844208BE4A90033DB4A /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
@@ -623,6 +639,7 @@
 				DD21B7381F92E81C0034A7CE /* Image-macOS.swift */,
 				522CD6591F8D4512008DB43D /* Layer.swift */,
 				522CD65A1F8D4512008DB43D /* LoadedTexture.swift */,
+				4EC9E085233BA9E200DE4AFF /* Point+Addition.swift */,
 				522CD65B1F8D4512008DB43D /* Optional+GetOrSet.swift */,
 				522CD65C1F8D4512008DB43D /* PluginManager.swift */,
 				522CD65D1F8D4512008DB43D /* PluginWrapper.swift */,
@@ -636,8 +653,10 @@
 				522CD6631F8D4512008DB43D /* UpdateOutcome.swift */,
 				522CD6641F8D4512008DB43D /* View+MakeLayer.swift */,
 				CDC7F0031FC419F300782197 /* TextureErrorHandler.swift */,
+				4E02F42A23293F3D00BE8008 /* Point+Normal.swift */,
+				4E02F42923293F3D00BE8008 /* Point+Rotate.swift */,
 				42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */,
-				42E9D1E63A00F44EAD6E4676 /* SeparatingAxisTheoremUtil.swift */,
+				42E9D1E63A00F44EAD6E4676 /* CollisionDetector.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -1033,7 +1052,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		C854A9AE1FAE9D5600638A78 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1114,6 +1133,7 @@
 				5253C7B61FA4D57200D304B5 /* Actor.swift in Sources */,
 				52E725941FCF68AB0099FCC7 /* Shadow.swift in Sources */,
 				5253C7A01FA4D56C00D304B5 /* ClickPlugin.swift in Sources */,
+				4E4609382329262F000D804F /* Point+DotProduct.swift in Sources */,
 				5253C7C01FA4D57200D304B5 /* Event.swift in Sources */,
 				5253C7A21FA4D56C00D304B5 /* DisplayLinkProtocol.swift in Sources */,
 				026CE1C61FC06B7E00A0998B /* CameraEventCollection.swift in Sources */,
@@ -1144,6 +1164,7 @@
 				5253C7A91FA4D56C00D304B5 /* PluginManager.swift in Sources */,
 				CDC7F0061FC419F300782197 /* TextureErrorHandler.swift in Sources */,
 				5253C7DA1FA4D57200D304B5 /* Timeline.swift in Sources */,
+				4E02F42D23293F3D00BE8008 /* Point+Rotate.swift in Sources */,
 				5253C7A41FA4D56C00D304B5 /* GameView.swift in Sources */,
 				5253C7CC1FA4D57200D304B5 /* MoveAction.swift in Sources */,
 				5209C862208CC1690033DB4A /* GridPlaceable.swift in Sources */,
@@ -1158,10 +1179,12 @@
 				5253C7AE1FA4D56C00D304B5 /* Updatable.swift in Sources */,
 				5253C7BE1FA4D57200D304B5 /* ClosureAction.swift in Sources */,
 				5253C7C41FA4D57200D304B5 /* FadeAction.swift in Sources */,
+				4EC9E088233BA9E200DE4AFF /* Point+Addition.swift in Sources */,
 				5253C7BF1FA4D57200D304B5 /* Constraint.swift in Sources */,
 				5209C847208BE4A90033DB4A /* Node.swift in Sources */,
 				5253C7CF1FA4D57200D304B5 /* RepeatMode.swift in Sources */,
 				5253C7DB1FA4D57200D304B5 /* Typealiases.swift in Sources */,
+				4E02F43023293F3D00BE8008 /* Point+Normal.swift in Sources */,
 				5253C79C1FA4D54000D304B5 /* GameWindow.swift in Sources */,
 				5253C7AB1FA4D56C00D304B5 /* ReplicatorLayer.swift in Sources */,
 				5253C7D31FA4D57200D304B5 /* ScaleAction.swift in Sources */,
@@ -1169,6 +1192,7 @@
 				5253C7C71FA4D57200D304B5 /* InstanceHashable.swift in Sources */,
 				5253C7B31FA4D57200D304B5 /* Action.swift in Sources */,
 				5253C7AC1FA4D56C00D304B5 /* Screen-iOS.swift in Sources */,
+				4E46093A23292633000D804F /* CollisionDetector.swift in Sources */,
 				5209C84B208BE8EB0033DB4A /* AnyNode.swift in Sources */,
 				5253C79D1FA4D56C00D304B5 /* ActionManager.swift in Sources */,
 				5253C7A11FA4D56C00D304B5 /* ClosureUpdatable.swift in Sources */,
@@ -1263,6 +1287,7 @@
 				CDC7F0041FC419F300782197 /* TextureErrorHandler.swift in Sources */,
 				522CD66F1F8D451D008DB43D /* AnimationAction.swift in Sources */,
 				522CD6891F8D451D008DB43D /* ScaleAction.swift in Sources */,
+				4E02F42B23293F3D00BE8008 /* Point+Rotate.swift in Sources */,
 				522CD66B1F8D451D008DB43D /* ActionToken.swift in Sources */,
 				5209C860208CC1690033DB4A /* GridPlaceable.swift in Sources */,
 				522CD69F1F8D4521008DB43D /* TextLayer.swift in Sources */,
@@ -1277,10 +1302,12 @@
 				522CD6861F8D451D008DB43D /* Rotatable.swift in Sources */,
 				522CD6721F8D451D008DB43D /* Camera.swift in Sources */,
 				5253C7DF1FA4D7E500D304B5 /* Font+Default.swift in Sources */,
+				4EC9E086233BA9E200DE4AFF /* Point+Addition.swift in Sources */,
 				5209C845208BE4A90033DB4A /* Node.swift in Sources */,
 				522CD67A1F8D451D008DB43D /* FadeAction.swift in Sources */,
 				522CD6691F8D451D008DB43D /* Action.swift in Sources */,
 				522CD68C1F8D451D008DB43D /* Texture.swift in Sources */,
+				4E02F42E23293F3D00BE8008 /* Point+Normal.swift in Sources */,
 				522CD6A31F8D4521008DB43D /* UpdateOutcome.swift in Sources */,
 				522CD67F1F8D451D008DB43D /* MetricAction.swift in Sources */,
 				522CD66E1F8D451D008DB43D /* Animation.swift in Sources */,
@@ -1300,7 +1327,7 @@
 				C800CE2D1FA77F74008EE08D /* BundleProtocol.swift in Sources */,
 				522CD6851F8D451D008DB43D /* RepeatMode.swift in Sources */,
 				42E9D7CCE0023C7CC772F358 /* Point+DotProduct.swift in Sources */,
-				42E9D756269E8BA2A0C9C5C8 /* SeparatingAxisTheoremUtil.swift in Sources */,
+				42E9D756269E8BA2A0C9C5C8 /* CollisionDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1361,6 +1388,7 @@
 				5256F9782053D989003F3F88 /* Coordinate.swift in Sources */,
 				DD21B7001F92E75A0034A7CE /* Layer.swift in Sources */,
 				DD21B7011F92E75A0034A7CE /* Grid.swift in Sources */,
+				4E4609372329262E000D804F /* Point+DotProduct.swift in Sources */,
 				52E725931FCF68AB0099FCC7 /* Shadow.swift in Sources */,
 				DD21B7031F92E75A0034A7CE /* GameView.swift in Sources */,
 				DD21B7041F92E75A0034A7CE /* Activatable.swift in Sources */,
@@ -1368,7 +1396,9 @@
 				DD21B73A1F92E8240034A7CE /* Image-macOS.swift in Sources */,
 				DD21B7051F92E75A0034A7CE /* Group.swift in Sources */,
 				5209C84E208BEAC00033DB4A /* CALayer+Transform.swift in Sources */,
+				4E02F42F23293F3D00BE8008 /* Point+Normal.swift in Sources */,
 				026CE1C51FC06B7E00A0998B /* CameraEventCollection.swift in Sources */,
+				4EC9E087233BA9E200DE4AFF /* Point+Addition.swift in Sources */,
 				DD21B7441F92EB1A0034A7CE /* DisplayLink-macOS.swift in Sources */,
 				DD21B73D1F92E8CB0034A7CE /* Screen-macOS.swift in Sources */,
 				5253C7DE1FA4D7E400D304B5 /* Font+Default.swift in Sources */,
@@ -1397,6 +1427,7 @@
 				DD21B71B1F92E75A0034A7CE /* Rotatable.swift in Sources */,
 				DD21B71C1F92E75A0034A7CE /* Camera.swift in Sources */,
 				DD21B71D1F92E75A0034A7CE /* FadeAction.swift in Sources */,
+				4E46093923292633000D804F /* CollisionDetector.swift in Sources */,
 				DD21B71E1F92E75A0034A7CE /* Action.swift in Sources */,
 				52A124D11FABA07500252047 /* EdgeInsets-macOS.swift in Sources */,
 				DD21B71F1F92E75A0034A7CE /* Texture.swift in Sources */,
@@ -1422,6 +1453,7 @@
 				528B21521FA382B300CE9967 /* UpdatableCollection.swift in Sources */,
 				DD21B72E1F92E75A0034A7CE /* ReplicatorLayer.swift in Sources */,
 				DD21B72F1F92E75A0034A7CE /* RepeatMode.swift in Sources */,
+				4E02F42C23293F3D00BE8008 /* Point+Rotate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

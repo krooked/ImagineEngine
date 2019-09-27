@@ -65,7 +65,7 @@ public final class Actor: Node<CALayer>, InstanceHashable, ActionPerformer,
     /// Whether the actor is able to participate in collisions.
     public var isCollisionDetectionEnabled = true
     // Advanced collision detection is taking rotation into account
-    public var isAdvancedCollisionDetectionEnabled = false
+    public var collisionDetectionTechnique: CollisionDetectionTechnique = .bounds
     /// Whether the actor responds to hit testing.
     public var isHitTestingEnabled = true { didSet { hitTestingStatusDidChange(from: oldValue) } }
     /// Any constraints that are applied to the actor, to restrict how and where it can move.
@@ -77,10 +77,7 @@ public final class Actor: Node<CALayer>, InstanceHashable, ActionPerformer,
     internal lazy var blocksInContact = Set<Block>()
     internal var isWithinScene = false
     internal var isCollisionDetectionActive = false
-    /// The vertices used for collision detection
-    internal var vertices: [CGPoint]?
-    /// The normal vectors used for collision detection
-    internal var normals: [CGPoint]?
+    
 
     private let pluginManager = PluginManager()
     private lazy var actionManager = ActionManager(object: self)
@@ -368,5 +365,35 @@ internal extension Actor {
         }
 
         return rect
+    }
+    
+    var vertices: [Point] {
+        let halfWidth = layer.bounds.width * scale / 2
+        let halfHeight = layer.bounds.height * scale / 2
+        var a = Point(x: -halfWidth, y:  halfHeight)
+        var b = Point(x: halfWidth, y: a.y)
+        var c = Point(x: b.x, y: -halfHeight)
+        var d = Point(x: a.x, y: c.y)
+        
+        // Apply rotation
+        a = a.rotate(radians: rotation)
+        b = b.rotate(radians: rotation)
+        c = c.rotate(radians: rotation)
+        d = d.rotate(radians: rotation)
+        
+        // Apply Translation
+        a = a.add(point: position)
+        b = b.add(point: position)
+        c = c.add(point: position)
+        d = d.add(point: position)
+        
+        return [a, b, c, d]
+    }
+}
+
+public extension Actor {
+    enum CollisionDetectionTechnique {
+        case seperatedAxisTheorem
+        case bounds
     }
 }
