@@ -1,6 +1,5 @@
-
 internal extension Point {
-    func dotProduct(B: Point) -> Metric {
-        return x * B.x + y * B.y
+    func dotProduct(pointB: Point) -> Metric {
+        return x * pointB.x + y * pointB.y
     }
 }

@@ -718,12 +718,6 @@ final class ActorTests: XCTestCase {
         actor.position.x += 1
         XCTAssertFalse(actor.isInContact(with: block))
     }
-    
-    func testRectVertices() {
-        actor.size = Size(width: 50, height: 50)
-        XCTAssertEqual(actor.rectVertices, [])
-        
-    }
 }
 
 private extension Size {

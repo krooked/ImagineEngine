@@ -77,8 +77,6 @@ public final class Actor: Node<CALayer>, InstanceHashable, ActionPerformer,
     internal lazy var blocksInContact = Set<Block>()
     internal var isWithinScene = false
     internal var isCollisionDetectionActive = false
-    
-
     private let pluginManager = PluginManager()
     private lazy var actionManager = ActionManager(object: self)
     private var velocityActionToken: ActionToken?
@@ -366,28 +364,27 @@ internal extension Actor {
 
         return rect
     }
-    
+
     var vertices: [Point] {
         let halfWidth = layer.bounds.width * scale / 2
         let halfHeight = layer.bounds.height * scale / 2
-        var a = Point(x: -halfWidth, y:  halfHeight)
-        var b = Point(x: halfWidth, y: a.y)
-        var c = Point(x: b.x, y: -halfHeight)
-        var d = Point(x: a.x, y: c.y)
-        
+        var vertexA = Point(x: -halfWidth, y:  halfHeight)
+        var vertexB = Point(x: halfWidth, y: vertexA.y)
+        var vertexC = Point(x: vertexB.x, y: -halfHeight)
+        var vertexD = Point(x: vertexA.x, y: vertexC.y)
+
         // Apply rotation
-        a = a.rotate(radians: rotation)
-        b = b.rotate(radians: rotation)
-        c = c.rotate(radians: rotation)
-        d = d.rotate(radians: rotation)
-        
+        vertexA = vertexA.rotate(radians: rotation)
+        vertexB = vertexB.rotate(radians: rotation)
+        vertexC = vertexC.rotate(radians: rotation)
+        vertexD = vertexD.rotate(radians: rotation)
+
         // Apply Translation
-        a = a.add(point: position)
-        b = b.add(point: position)
-        c = c.add(point: position)
-        d = d.add(point: position)
-        
-        return [a, b, c, d]
+        vertexA = vertexA.add(point: position)
+        vertexB = vertexB.add(point: position)
+        vertexC = vertexC.add(point: position)
+        vertexD = vertexD.add(point: position)
+        return [vertexA, vertexB, vertexC, vertexD]
     }
 }
 

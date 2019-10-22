@@ -1,7 +1,6 @@
 internal typealias Projections = (minProjection: Metric, maxProjection: Metric)
 
 internal func intersection(between actorA: Actor, and actorB: Actor) -> Bool {
-    // TODO make this check in Grid.swift ?
     guard actorA.collisionDetectionTechnique == .seperatedAxisTheorem &&
         actorB.collisionDetectionTechnique == .seperatedAxisTheorem else {
             return actorA.rectForCollisionDetection.intersects(actorB.rectForCollisionDetection)
