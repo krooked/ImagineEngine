@@ -450,3 +450,15 @@ extension Grid.Index {
         self.y = Int(floor(y / Grid.Tile.size))
     }
 }
+
+private extension Grid {
+    func intersection(between actorA: Actor, and actorB: Actor) -> Bool {
+        guard actorA.collisionDetectionTechnique == .vertices &&
+            actorB.collisionDetectionTechnique == .vertices else {
+                return actorA.rectForCollisionDetection.intersects(actorB.rectForCollisionDetection)
+        }
+
+        return actorA.verticesForCollisionDetection.intersects(otherVertices: actorB.verticesForCollisionDetection)
+    }
+
+}

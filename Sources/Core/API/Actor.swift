@@ -365,9 +365,10 @@ internal extension Actor {
         return rect
     }
 
-    var vertices: [Point] {
+    var verticesForCollisionDetection: Vertices {
         let halfWidth = layer.bounds.width * scale / 2
         let halfHeight = layer.bounds.height * scale / 2
+
         var vertexA = Point(x: -halfWidth, y:  halfHeight)
         var vertexB = Point(x: halfWidth, y: vertexA.y)
         var vertexC = Point(x: vertexB.x, y: -halfHeight)
@@ -384,13 +385,14 @@ internal extension Actor {
         vertexB = vertexB.add(point: position)
         vertexC = vertexC.add(point: position)
         vertexD = vertexD.add(point: position)
+
         return [vertexA, vertexB, vertexC, vertexD]
     }
 }
 
 public extension Actor {
     enum CollisionDetectionTechnique {
-        case seperatedAxisTheorem
+        case vertices
         case bounds
     }
 }

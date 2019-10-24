@@ -10,7 +10,6 @@
 		026CE1C41FC06B7E00A0998B /* CameraEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */; };
 		026CE1C51FC06B7E00A0998B /* CameraEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */; };
 		026CE1C61FC06B7E00A0998B /* CameraEventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */; };
-		42E9D756269E8BA2A0C9C5C8 /* ActorCollisionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9D1E63A00F44EAD6E4676 /* ActorCollisionDetection.swift */; };
 		42E9D7CCE0023C7CC772F358 /* Point+DotProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */; };
 		4E02F42B23293F3D00BE8008 /* Point+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F42923293F3D00BE8008 /* Point+Rotate.swift */; };
 		4E02F42C23293F3D00BE8008 /* Point+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F42923293F3D00BE8008 /* Point+Rotate.swift */; };
@@ -20,11 +19,12 @@
 		4E02F43023293F3D00BE8008 /* Point+Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02F42A23293F3D00BE8008 /* Point+Normal.swift */; };
 		4E4609372329262E000D804F /* Point+DotProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */; };
 		4E4609382329262F000D804F /* Point+DotProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */; };
-		4E46093923292633000D804F /* ActorCollisionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9D1E63A00F44EAD6E4676 /* ActorCollisionDetection.swift */; };
-		4E46093A23292633000D804F /* ActorCollisionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9D1E63A00F44EAD6E4676 /* ActorCollisionDetection.swift */; };
 		4EC9E086233BA9E200DE4AFF /* Point+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC9E085233BA9E200DE4AFF /* Point+Addition.swift */; };
 		4EC9E087233BA9E200DE4AFF /* Point+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC9E085233BA9E200DE4AFF /* Point+Addition.swift */; };
 		4EC9E088233BA9E200DE4AFF /* Point+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC9E085233BA9E200DE4AFF /* Point+Addition.swift */; };
+		4EE148EB2360804100F0AE2D /* Vertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE148EA2360804100F0AE2D /* Vertices.swift */; };
+		4EE148EC2360804100F0AE2D /* Vertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE148EA2360804100F0AE2D /* Vertices.swift */; };
+		4EE148ED2360804100F0AE2D /* Vertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE148EA2360804100F0AE2D /* Vertices.swift */; };
 		5204849D1FA353590011D372 /* ClickGestureRecognizerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849C1FA353590011D372 /* ClickGestureRecognizerMock.swift */; };
 		5204849E1FA353590011D372 /* ClickGestureRecognizerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849C1FA353590011D372 /* ClickGestureRecognizerMock.swift */; };
 		520484A21FA357070011D372 /* ClickGestureRecognizer-macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849F1FA356F80011D372 /* ClickGestureRecognizer-macOS.swift */; };
@@ -374,11 +374,11 @@
 
 /* Begin PBXFileReference section */
 		026CE1C31FC06B7E00A0998B /* CameraEventCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraEventCollection.swift; sourceTree = "<group>"; };
-		42E9D1E63A00F44EAD6E4676 /* ActorCollisionDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActorCollisionDetection.swift; sourceTree = "<group>"; };
 		42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+DotProduct.swift"; sourceTree = "<group>"; };
 		4E02F42923293F3D00BE8008 /* Point+Rotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+Rotate.swift"; sourceTree = "<group>"; };
 		4E02F42A23293F3D00BE8008 /* Point+Normal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+Normal.swift"; sourceTree = "<group>"; };
 		4EC9E085233BA9E200DE4AFF /* Point+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+Addition.swift"; sourceTree = "<group>"; };
+		4EE148EA2360804100F0AE2D /* Vertices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertices.swift; sourceTree = "<group>"; };
 		5204849C1FA353590011D372 /* ClickGestureRecognizerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickGestureRecognizerMock.swift; sourceTree = "<group>"; };
 		5204849F1FA356F80011D372 /* ClickGestureRecognizer-macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClickGestureRecognizer-macOS.swift"; sourceTree = "<group>"; };
 		5209C844208BE4A90033DB4A /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
@@ -656,7 +656,7 @@
 				4E02F42A23293F3D00BE8008 /* Point+Normal.swift */,
 				4E02F42923293F3D00BE8008 /* Point+Rotate.swift */,
 				42E9DB53015B77F7DF0CD0F8 /* Point+DotProduct.swift */,
-				42E9D1E63A00F44EAD6E4676 /* ActorCollisionDetection.swift */,
+				4EE148EA2360804100F0AE2D /* Vertices.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -1211,8 +1211,8 @@
 				5253C7C71FA4D57200D304B5 /* InstanceHashable.swift in Sources */,
 				5253C7B31FA4D57200D304B5 /* Action.swift in Sources */,
 				5253C7AC1FA4D56C00D304B5 /* Screen-iOS.swift in Sources */,
-				4E46093A23292633000D804F /* ActorCollisionDetection.swift in Sources */,
 				5209C84B208BE8EB0033DB4A /* AnyNode.swift in Sources */,
+				4EE148ED2360804100F0AE2D /* Vertices.swift in Sources */,
 				5253C79D1FA4D56C00D304B5 /* ActionManager.swift in Sources */,
 				5253C7A11FA4D56C00D304B5 /* ClosureUpdatable.swift in Sources */,
 				5253C7AA1FA4D56C00D304B5 /* PluginWrapper.swift in Sources */,
@@ -1336,6 +1336,7 @@
 				5209C849208BE8EB0033DB4A /* AnyNode.swift in Sources */,
 				522CD68D1F8D451D008DB43D /* Timeline.swift in Sources */,
 				522CD6761F8D451D008DB43D /* Event.swift in Sources */,
+				4EE148EB2360804100F0AE2D /* Vertices.swift in Sources */,
 				522CD6781F8D451D008DB43D /* EventToken.swift in Sources */,
 				522CD6821F8D451D008DB43D /* MoveAction.swift in Sources */,
 				522CD6A01F8D4521008DB43D /* TextureManager.swift in Sources */,
@@ -1346,7 +1347,6 @@
 				C800CE2D1FA77F74008EE08D /* BundleProtocol.swift in Sources */,
 				522CD6851F8D451D008DB43D /* RepeatMode.swift in Sources */,
 				42E9D7CCE0023C7CC772F358 /* Point+DotProduct.swift in Sources */,
-				42E9D756269E8BA2A0C9C5C8 /* ActorCollisionDetection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1446,7 +1446,6 @@
 				DD21B71B1F92E75A0034A7CE /* Rotatable.swift in Sources */,
 				DD21B71C1F92E75A0034A7CE /* Camera.swift in Sources */,
 				DD21B71D1F92E75A0034A7CE /* FadeAction.swift in Sources */,
-				4E46093923292633000D804F /* ActorCollisionDetection.swift in Sources */,
 				DD21B71E1F92E75A0034A7CE /* Action.swift in Sources */,
 				52A124D11FABA07500252047 /* EdgeInsets-macOS.swift in Sources */,
 				DD21B71F1F92E75A0034A7CE /* Texture.swift in Sources */,
@@ -1455,6 +1454,7 @@
 				DD21B7211F92E75A0034A7CE /* MetricAction.swift in Sources */,
 				DD21B7221F92E75A0034A7CE /* Animation.swift in Sources */,
 				DD21B7231F92E75A0034A7CE /* Game.swift in Sources */,
+				4EE148EC2360804100F0AE2D /* Vertices.swift in Sources */,
 				DD21B7241F92E75A0034A7CE /* Mirroring.swift in Sources */,
 				DD21B7251F92E75A0034A7CE /* Actor.swift in Sources */,
 				DD21B7261F92E75A0034A7CE /* Timeline.swift in Sources */,
