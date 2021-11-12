@@ -7,7 +7,9 @@
 import Foundation
 
 internal class GameView: View {
-    override var frame: Rect { didSet { game?.scene.camera.size = frame.size } }
+    override var frame: Rect { didSet {
+        game?.scene.camera.size = frame.size }
+    }
     weak var game: Game?
 
     #if os(macOS)

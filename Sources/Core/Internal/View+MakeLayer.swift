@@ -6,6 +6,7 @@
 
 import Foundation
 import QuartzCore
+import UIKit
 
 internal extension View {
     func makeLayerIfNeeded() -> CALayer {

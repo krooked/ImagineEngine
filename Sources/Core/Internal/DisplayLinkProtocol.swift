@@ -6,7 +6,7 @@
 
 import Foundation
 
-internal protocol DisplayLinkProtocol: class {
+internal protocol DisplayLinkProtocol: AnyObject {
     var callback: () -> Void { get set }
     func activate()
 }
