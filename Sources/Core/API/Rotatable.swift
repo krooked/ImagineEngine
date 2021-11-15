@@ -7,7 +7,7 @@
 import Foundation
 
 /// Protocol adopted by objects that can be rotated
-public protocol Rotatable: class {
+public protocol Rotatable: AnyObject {
     /// The rotation of the object along the Z-axis (in radians)
     var rotation: Metric { get set }
 }

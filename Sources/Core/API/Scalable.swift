@@ -7,7 +7,7 @@
 import Foundation
 
 /// Protocol adopted by objects that can be scaled
-public protocol Scalable: class {
+public protocol Scalable: AnyObject {
     /// The scale factor that is applied to the object. Affects rendering only.
     var scale: Metric { get set }
 }

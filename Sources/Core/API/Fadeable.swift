@@ -7,7 +7,7 @@
 import Foundation
 
 /// Protocol adopted by objects that can have their opacity changed
-public protocol Fadeable: class {
+public protocol Fadeable: AnyObject {
     /// The opacity of the object, ranging from 0 (invisible) - 1 (opaque)
     var opacity: Metric { get set }
 }

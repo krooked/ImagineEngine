@@ -7,7 +7,7 @@
 import Foundation
 
 /// Protocol adopted by types that can be indexed along the z axis
-public protocol ZIndexed: class {
+public protocol ZIndexed: AnyObject {
     /// The index of the object on the z axis. 0 = implicit index.
     var zIndex: Int { get set }
 }

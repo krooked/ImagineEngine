@@ -26,7 +26,7 @@ import Foundation
  *  actor.add(MyPlugin())
  *  ```
  */
-public protocol Plugin: class {
+public protocol Plugin: AnyObject {
     /// The type of object that the plugin is compatible with
     associatedtype Object: AnyObject
 

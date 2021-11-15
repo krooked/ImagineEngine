@@ -12,7 +12,7 @@ import Foundation
  *  You don't conform to this protocol yourself, instead `Actor` & `Camera` already
  *  conform to this protocol, making them ready to perform actions.
  */
-public protocol ActionPerformer: class {
+public protocol ActionPerformer: AnyObject {
     /// Perform an action
     /// The action will be started on the next frame, the returned `ActionToken`
     /// can be used to cancel the action, or chain it to other ones.

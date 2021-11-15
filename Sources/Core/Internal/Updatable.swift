@@ -6,6 +6,6 @@
 
 import Foundation
 
-internal protocol Updatable: class {
+internal protocol Updatable: AnyObject {
     func update(currentTime: TimeInterval) -> UpdateOutcome
 }

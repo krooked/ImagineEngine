@@ -6,7 +6,7 @@
 
 import Foundation
 
-internal protocol Activatable: class {
+internal protocol Activatable: AnyObject {
     func activate(in game: Game)
     func deactivate()
 }

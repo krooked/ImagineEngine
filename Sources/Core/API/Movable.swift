@@ -7,7 +7,7 @@
 import Foundation
 
 /// Protocol adopted by objects that can have their position changed
-public protocol Movable: class {
+public protocol Movable: AnyObject {
     /// The current position of the object within its scene
     var position: Point { get set }
 }

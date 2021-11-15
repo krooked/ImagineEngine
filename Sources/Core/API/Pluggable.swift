@@ -13,7 +13,7 @@ import Foundation
  *  objects through Plugins (see the `Plugin` protocol for more info). This lets
  *  you easily decouple your game logic and share code between projects.
  */
-public protocol Pluggable: class {
+public protocol Pluggable: AnyObject {
     /// The target of the plugin, usually the object iself
     associatedtype PluginTarget = Self
 
