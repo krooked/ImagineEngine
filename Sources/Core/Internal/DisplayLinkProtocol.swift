@@ -8,5 +8,6 @@ import Foundation
 
 internal protocol DisplayLinkProtocol: AnyObject {
     var callback: () -> Void { get set }
+    var framerate: Double { get }
     func activate()
 }

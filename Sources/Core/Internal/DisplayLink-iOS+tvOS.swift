@@ -9,6 +9,9 @@ import QuartzCore
 
 internal final class DisplayLink: DisplayLinkProtocol {
     var callback: () -> Void = {}
+    var framerate: Double {
+        1 / (link.targetTimestamp - link.timestamp)
+    }
     private lazy var link = makeLink()
 
     deinit {
