@@ -18,7 +18,10 @@ open class Game {
     public let view: View
     /// The current active scene that the game is presenting
     public var scene: Scene { didSet { sceneDidChange(from: oldValue) } }
-
+    /// Actual framerate
+    public var framerate: Int {
+        Int(displayLink.framerate)
+    }
     internal private(set) var currentTime: TimeInterval
 
     private let displayLink: DisplayLinkProtocol
