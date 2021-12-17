@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "John Sundell" => "john@sundell.co" }
   s.social_media_url   = "https://twitter.com/johnsundell"
-  s.ios.deployment_target = "9.0"
+  s.ios.deployment_target = "12.0"
   s.osx.deployment_target = "10.12"
   s.tvos.deployment_target = "10.0"
   s.source       = { :git => "https://github.com/JohnSundell/ImagineEngine.git", :tag => s.version.to_s }
