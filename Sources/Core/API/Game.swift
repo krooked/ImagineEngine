@@ -19,8 +19,8 @@ open class Game {
     /// The current active scene that the game is presenting
     public var scene: Scene { didSet { sceneDidChange(from: oldValue) } }
     /// Actual framerate
-    public var framerate: Int {
-        Int(displayLink.framerate)
+    public var framerate: Double {
+        round(displayLink.framerate)
     }
     internal private(set) var currentTime: TimeInterval
 
